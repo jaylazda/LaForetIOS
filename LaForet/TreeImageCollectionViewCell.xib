@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TreeImageCollectionViewCell" id="gTV-IL-0wX" customClass="TreeImageCollectionViewCell" customModule="LaForet" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="125" height="125"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="125" height="125"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CnX-Gl-PxP" userLabel="bgView">
+                        <rect key="frame" x="0.0" y="0.0" width="125" height="125"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sprout" translatesAutoresizingMaskIntoConstraints="NO" id="7D3-lJ-uug" userLabel="treeImage">
+                                <rect key="frame" x="0.0" y="0.0" width="125" height="125"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="125" id="1V6-F8-Mlp"/>
+                                    <constraint firstAttribute="width" constant="125" id="JZ2-q8-xa7"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="7D3-lJ-uug" firstAttribute="leading" secondItem="CnX-Gl-PxP" secondAttribute="leading" id="1qR-mt-16S"/>
+                            <constraint firstItem="7D3-lJ-uug" firstAttribute="centerY" secondItem="CnX-Gl-PxP" secondAttribute="centerY" id="JsN-hK-bUa"/>
+                            <constraint firstItem="7D3-lJ-uug" firstAttribute="centerX" secondItem="CnX-Gl-PxP" secondAttribute="centerX" id="RbJ-mC-wJ2"/>
+                            <constraint firstAttribute="height" constant="125" id="Vmp-nb-GUN"/>
+                            <constraint firstItem="7D3-lJ-uug" firstAttribute="top" secondItem="CnX-Gl-PxP" secondAttribute="top" id="lhP-B1-vyR"/>
+                            <constraint firstAttribute="width" constant="125" id="ysZ-m0-UGw"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="CnX-Gl-PxP" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Gaf-bH-RfH"/>
+                <constraint firstItem="CnX-Gl-PxP" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="a5X-6y-b4g"/>
+                <constraint firstAttribute="bottom" secondItem="CnX-Gl-PxP" secondAttribute="bottom" id="kYh-IE-Yrv"/>
+                <constraint firstAttribute="trailing" secondItem="CnX-Gl-PxP" secondAttribute="trailing" id="nde-5M-LiQ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="125" height="125"/>
+            <connections>
+                <outlet property="bgView" destination="CnX-Gl-PxP" id="rCC-dr-zix"/>
+                <outlet property="treeImage" destination="7D3-lJ-uug" id="CBB-eJ-NoR"/>
+            </connections>
+            <point key="canvasLocation" x="186.23188405797103" y="130.24553571428572"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="sprout" width="512" height="512"/>
+    </resources>
+</document>
